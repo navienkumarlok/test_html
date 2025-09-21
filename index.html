@@ -1,1 +1,698 @@
-<script>alert(3)</script>
+<!DOCTYPE html>
+  <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+  <!--[if IE 8]>    <html lang="en" class="no-js ie8 old-ie"> <![endif]-->
+  <!--[if IE 9]>    <html lang="en" class="no-js ie9 old-ie"> <![endif]-->
+  <!--[if (gte IE 10)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
+  <head>
+    <title>Getting Started with MindTap</title>
+    <script>
+//<![CDATA[
+
+  const ENV = (function() {
+    return {
+      MULTIPASS_HOST: 'https://auth.vidyard.com',
+      SHIRE_HOST: 'share.vidyard.com',
+      ASSET_DOMAIN: '//assets.vidyard.com',
+      ROLLBAR_CLIENT_ACCESS_TOKEN: '77e1e8e0dd4d4164a328d393aa5d1b1a',
+      RAILS_ENV: 'production',
+      DATADOG_ENVIRONMENT: 'production',
+      DATADOG_CLIENT_TOKEN: 'pub56bc56349208f8f9062002ebe4062cde',
+      REEFER_API_URL: 'raw.vidyard.com',
+    };
+  }());
+
+//]]>
+</script>
+    <link rel="icon" href="https://icons.duckduckgo.com/ip3/cengage.com.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="https://icons.duckduckgo.com/ip3/cengage.com.ico" type="image/x-icon"/>
+
+      <meta name="robots" content="index, follow" />
+      <meta name="googlebot" content="index" />
+
+    <meta name="title" content="Getting Started with MindTap" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="generator" content="vidyard.com">
+
+      <script src="//assets.vidyard.com/share/webpack/js/runtime~rollbar-a1d79ee531b0e23ed4eb.js" crossorigin="anonymous"></script>
+<script src="//assets.vidyard.com/share/webpack/js/vendors~hub-scripts/authentication/popup_manifest~rollbar~vue/room_entrypoint-c15f7ba56a783613f0aa.chunk.js" crossorigin="anonymous"></script>
+<script src="//assets.vidyard.com/share/webpack/js/rollbar-e022171b3bdb49732e3f.chunk.js" crossorigin="anonymous"></script>
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="HIxqo1UtCLqNh2+lusTxC+M66QoquROFq3BK5FGgMbYbx8V6ClHt6OPsfngMAyNcngJTdbwE1jUafGy6bACAdQ==" />
+
+        <meta name="medium" content="video">
+  <meta name="title" content="Getting Started with MindTap">
+  <meta name="description" content="This webinar focuses on course setup, student registration and the basic features of MindTap that will engage your students and help them master course content from day one. Start the term off right by attending this Getting Started webinar!">
+  <meta name="video_type" content="application/x-shockwave-flash">
+  <meta name="video_height" content="360">
+  <meta name="video_width" content="640">
+
+  <meta property="fb:app_id" content="198021633865294">
+  <meta property="fb:admins" content="42301029">
+
+  <meta name="slack-app-id" content="A0166HRL7E3">
+  <link rel="alternate" type="application/json+oembed" href="https://api.vidyard.com/dashboard/v1.1/oembed?url=https%3A%2F%2Fvideo.cengage.com%2Fwatch%2F6dQbEpZeQc95gAgeoytYsb%3Fcustom_id%3D" title="Getting Started with MindTap">
+
+  <meta property="og:url" content="https://video.cengage.com/watch/6dQbEpZeQc95gAgeoytYsb?custom_id=">
+    <meta property="og:site_name" content="Vidyard">
+  <meta property="og:title" content="Getting Started with MindTap">
+  <meta property="og:description" content="This webinar focuses on course setup, student registration and the basic features of MindTap that will engage your students and help them master course content from day one. Start the term off right by attending this Getting Started webinar!">
+
+  <meta property="og:image" content="https://play.vidyard.com/6dQbEpZeQc95gAgeoytYsb.jpg?">
+  <meta property="og:image:width" content="470">
+  <meta property="og:image:height" content="264">
+
+    <meta property="og:type" content="video.other">
+    <meta property="video:duration" content="3624">
+
+    <meta property="og:video:type" content="text/html">
+    <meta property="og:video:width" content="470">
+    <meta property="og:video:height" content="264">
+    <meta property="og:video" content="https://play.vidyard.com/6dQbEpZeQc95gAgeoytYsb.html?autoplay=0&amp;custom_id=&amp;embed_button=0&amp;viral_sharing=0&amp;">
+    <meta property="og:video:secure_url" content="https://play.vidyard.com/6dQbEpZeQc95gAgeoytYsb.html?autoplay=0&amp;custom_id=&amp;embed_button=0&amp;viral_sharing=0&amp;">
+
+    <meta property="og:video:type" content="application/x-shockwave-flash">
+    <meta property="og:video:width" content="470">
+    <meta property="og:video:height" content="264">
+
+
+      <meta property="og:video:type" content="video/mp4">
+      <meta property="og:video:width" content="470">
+      <meta property="og:video:height" content="264">
+      <meta property="og:video" content="https://cdn.vidyard.com/videos/RMmOC8nEtScsNauJpnSdQQ/sd.mp4?X8JYCW7ZdfVdQ7TC93p49jkzyf_kgxq_WFfdsVv2ITwsN12gNnGLMNSHungocsDyVp4trfHfmjiRTPM6FWKTqYFZoe_SFsI5jl5UGmQKSKYabJxv3GiHmRFvcfcuzGKE4fcBLxP9vjU">
+      <meta property="og:video:secure_url" content="https://cdn.vidyard.com/videos/RMmOC8nEtScsNauJpnSdQQ/sd.mp4?X8JYCW7ZdfVdQ7TC93p49jkzyf_kgxq_WFfdsVv2ITwsN12gNnGLMNSHungocsDyVp4trfHfmjiRTPM6FWKTqYFZoe_SFsI5jl5UGmQKSKYabJxv3GiHmRFvcfcuzGKE4fcBLxP9vjU">
+
+      <meta name="twitter:player:stream" content="https://cdn.vidyard.com/videos/RMmOC8nEtScsNauJpnSdQQ/sd.mp4?X8JYCW7ZdfVdQ7TC93p49jkzyf_kgxq_WFfdsVv2ITwsN12gNnGLMNSHungocsDyVp4trfHfmjiRTPM6FWKTqYFZoe_SFsI5jl5UGmQKSKYabJxv3GiHmRFvcfcuzGKE4fcBLxP9vjU">
+      <meta name="twitter:player:stream:content_type" content="video/mp4; codecs=&quot;avc1.42E01E1, mp4a.40.2&quot;">
+
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:url" content="https://video.cengage.com/watch/6dQbEpZeQc95gAgeoytYsb?custom_id=">
+    <meta name="twitter:site" content="Vidyard">
+    <meta name="twitter:title" content="Getting Started with MindTap">
+    <meta name="twitter:description" content="This webinar focuses on course setup, student registration and the basic features of MindTap that will engage your students and help them master course content from day one. Start the term off right by attending this Getting Started webinar!">
+    <meta name="twitter:player:width" content="435">
+    <meta name="twitter:player:height" content="245">
+    <meta name="twitter:player" content="https://play.vidyard.com/6dQbEpZeQc95gAgeoytYsb.html?autoplay=0&amp;custom_id=&amp;embed_button=0&amp;viral_sharing=0&amp;">
+    <meta name="twitter:image" content="https://play.vidyard.com/6dQbEpZeQc95gAgeoytYsb.jpg?">
+
+
+
+    <script src="//assets.vidyard.com/share/webpack/js/runtime~common-64694b1ca711cac66eb3.js" crossorigin="anonymous"></script>
+<script src="//assets.vidyard.com/share/webpack/js/vendors~common~hub-scripts/assurance/manifest~hub-scripts/beckman_coulter/manifest~hub-scripts/brand~901e432c-aad4bfe7232b2696ee86.chunk.js" crossorigin="anonymous"></script>
+<script src="//assets.vidyard.com/share/webpack/js/vendors~common-39e26c8b16f83ce19abc.chunk.js" crossorigin="anonymous"></script>
+<script src="//assets.vidyard.com/share/webpack/js/common-25aea70985dfe60b0519.chunk.js" crossorigin="anonymous"></script>
+
+      <script src="//assets.vidyard.com/share/webpack/js/runtime~hub-scripts/remove_partner_query_params-8f266534cf97c463578c.js" crossorigin="anonymous"></script>
+<script src="//assets.vidyard.com/share/webpack/js/hub-scripts/remove_partner_query_params-c4a29e4f739c2a9b4380.chunk.js" crossorigin="anonymous"></script>
+
+    <script src="//assets.vidyard.com/share/webpack/js/runtime~hub-scripts/manifest_bootstrap-82de397d9d8570c419f2.js" crossorigin="anonymous"></script>
+<script src="//assets.vidyard.com/share/webpack/js/vendors~common~hub-scripts/assurance/manifest~hub-scripts/beckman_coulter/manifest~hub-scripts/brand~901e432c-aad4bfe7232b2696ee86.chunk.js" crossorigin="anonymous"></script>
+<script src="//assets.vidyard.com/share/webpack/js/hub-scripts/manifest_bootstrap-f194b645f54e6397a3ad.chunk.js" crossorigin="anonymous"></script>
+    <script src="//assets.vidyard.com/share/webpack/js/runtime~hub-scripts/sharing_page_2019/manifest-37bc590a19c315d11be7.js" crossorigin="anonymous"></script>
+<script src="//assets.vidyard.com/share/webpack/js/vendors~common~hub-scripts/assurance/manifest~hub-scripts/beckman_coulter/manifest~hub-scripts/brand~901e432c-aad4bfe7232b2696ee86.chunk.js" crossorigin="anonymous"></script>
+<script src="//assets.vidyard.com/share/webpack/js/vendors~hub-scripts/authentication/authorize_manifest~hub-scripts/authentication/manifest~hub-script~ef05716c-eee29591ea0c45da13a4.chunk.js" crossorigin="anonymous"></script>
+<script src="//assets.vidyard.com/share/webpack/js/hub-scripts/sharing_page_2019/manifest-54e6a29eca3ba06c3139.chunk.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="//assets.vidyard.com/share/webpack/css/hub-styles/manifest_bootstrap-bf471e7a.chunk.css" media="screen" />
+<link rel="stylesheet" href="//assets.vidyard.com/share/webpack/hub-styles/manifest_bootstrap.bf471e7ad1ea5a3c6ce8.css" media="screen" />
+    <link rel="stylesheet" href="//assets.vidyard.com/share/webpack/css/hub-styles/sharing_page_2019/manifest-f59e2647.chunk.css" media="screen" />
+<link rel="stylesheet" href="//assets.vidyard.com/share/webpack/hub-styles/sharing_page_2019/manifest.f59e26476686ec1559e5.css" media="screen" />
+
+    <style type="text/css">
+    </style>
+
+
+    
+  
+  <script>
+//<![CDATA[
+
+  $(document).ready(function () {
+
+          if (typeof Authenticator.init === 'function') {
+            Authenticator.init();
+          }
+
+          if (typeof SharingPage2019.init === 'function') {
+            SharingPage2019.init(0, 0, "6dQbEpZeQc95gAgeoytYsb", 640, true, {}, "raw.vidyard.com", false, false, 0, 0, 0, true, 0, true);
+          }
+  });
+
+//]]>
+</script>
+
+    <style type="text/css">
+      .user-color {
+        background-color: #ffffff;
+      }
+    </style>
+
+
+
+    <style type='text/css' class='css_style'>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=OpenSans" rel="stylesheet">
+    </style>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5ZZ9XQ9');</script>
+<!-- End Google Tag Manager -->
+<script type="text/javascript" src="//cdn.evgnet.com/beacon/cengagelearning/cengage_com/scripts/evergage.min.js"></script>
+    
+    
+  </head>
+  <body class="user-color">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZZ9XQ9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    
+    <div id="notifications">
+  <div id="header_success" class="alert alert-success header alert-dismissable text-center collapse">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <i class="fa fa-check-circle" aria-hidden="true"></i>
+    <span class="message" role="alert" aria-live="assertive"></span>
+  </div>
+
+  <div id="header_notice" class="alert alert-info header alert-dismissable text-center collapse">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <i class="fa fa-info-circle" aria-hidden="true"></i>
+    <span class="message" role="alert" aria-live="assertive"></span>
+  </div>
+
+  <div id="header_error" class="alert alert-danger header alert-dismissable text-center collapse">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+    <span class="message" role="alert" aria-live="assertive"></span>
+  </div>
+</div>
+
+
+    <div id="hub-layout-container">
+      <div id="header">
+            <style>
+  .header-logo-container {display:none;}
+
+  .header-logo-container-edited {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      padding: 0 50px;
+      height: 83px;
+      justify-content: space-between;
+    }
+</style>
+<header><div class="header-logo-container-edited">
+  <div id="logo-wrapper">
+      <a id="logo" aria-label="Cengage Website" href="https://www.cengage.com">
+        <img alt="Cengage" src="https://cengage.widen.net/content/vopn1rbwil/png/cengage-logo-horizontal-rgb.png?h=80&amp;position=c">
+      </a>
+
+    <div class="custom-tooltip removed" id="logo-tooltip">
+      
+    </div>
+  </div>
+</div>
+</header>
+      </div>
+      
+        <div id="main-content">
+          
+
+<header>
+    <div id="upgrade-banner" class="removed banner edit-banner" aria-live="polite'">
+      <div class="upgrade-banner__content" role="alert" aria-describedby="describedById">
+        <div class="upgrade-banner__description">
+          <span id="described-by-id">
+              This is a preview of your video. Customize your viewer experience and add your own logo and branding.
+              <a href="https://secure.vidyard.com/organizations/8478/theme/customize">Customize your theme</a>
+          </span>
+        </div>
+      </div>
+    </div>
+
+  <div class="header-logo-container">
+    <div id="logo-wrapper">
+      
+  <div id="custom-logo">
+      <a target="_blank" href="https://www.cengage.com">
+        <img alt="Custom logo" src="//cdn.vidyard.com/hubs/logos/13529bb0-c68c-4115-ba24-d6755128ef78.jpg" />
+</a>  </div>
+
+      <div class="custom-tooltip removed" id="logo-tooltip">
+        Upgrade to add your own logo
+      </div>
+    </div>
+  </div>
+</header>
+<div class="page-content ">
+  <div id="sharing-stage">
+    <div id="name-header" class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+              <h1 class="text-center">Getting Started with MindTap</h1>
+          <div id="stage">
+            <meta itemprop="height" content="360">
+            <meta itemprop="width" content="640">
+            <meta itemprop="thumbnail" content="//play.vidyard.com/6dQbEpZeQc95gAgeoytYsb.jpg?">
+            <meta itemprop="duration" content="T3624S">
+            <div class="aspect-ratio">
+              <script type='text/javascript' async src='https://play.vidyard.com/embed/v4/untagged/29a4961c7e4ba95f8c30d4dd80196040388e76d1/v4.js' data-playbackurl='play.vidyard.com'></script><img style='margin: auto; display: block; width: 100%; 'class='vidyard-player-embed' src='https://play.vidyard.com/6dQbEpZeQc95gAgeoytYsb.jpg' data-disable_analytics='0' data-vyetoken='' data-preload='auto' data-disable_larger_player='true' data-controller='hubs' data-action='show' data-uuid='6dQbEpZeQc95gAgeoytYsb' data-type='inline' />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+
+      <div id="sharing-description" class="user-opacity">
+        <div class="description-container">
+            <div class="video-description-full-width">
+              This webinar focuses on course setup, student registration and the basic features of MindTap that will engage your students and help them master course content from day one. Start the term off right by attending this Getting Started webinar!
+            </div>
+        </div>
+
+      </div>
+
+
+
+
+  
+
+
+</div>
+
+<footer class="footer hidden" id="footer">
+  <div class="footer-content">
+    <div class="footer-text-wrapper">
+        <div class="footer-text-container">
+          <div class="footer-text">
+            Vidyard uses cookies to better understand how videos are viewed, and to improve your experience.
+            <a href="https://www.vidyard.com/cookies/" id="footer-learn-more-button" tabIndex="-1"> Learn more</a>
+          </div>
+        </div>
+    </div>
+    <div class="confirm-button-wrapper">
+      <div class="confirm-button-container">
+        <button class="confirm-button blue-confirm-button" id="footer-confirm-button" onclick="SharingPage2019.acceptCookies()" tabIndex="-1">Got it</button>
+      </div>
+    </div>
+    <div class="close-button-wrapper">
+      <div class="close-button-container">
+        <div class="close-button" id="footer-close-button" onclick="SharingPage2019.closeFooter()" tabIndex="-1">
+          <i class="close-clickable">
+            <img src="//assets.vidyard.com/share/webpack/images/hubs/sharing_page_2019/close_button.svg" alt="Close Button"/>
+          </i>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+        </div>
+      
+      <div id="footer">
+           
+    <style>
+
+
+      *{
+        margin: 0px;
+
+      }
+
+      footer {
+        margin: 0;
+        padding: 0;
+        background-color: #003865;
+        min-height: 400px;
+      }
+
+      #grid-container {
+        display: grid;
+        grid-template-columns: .3fr .3fr .5fr;
+        grid-auto-flow: dense;
+        margin: 0 auto;
+        list-style: none;
+        width: 900px;
+      }
+
+
+      .col1, .col2, .col3 {
+        width: 300px;
+        float: left;
+        margin: 20px;
+      }
+
+       .col2 {
+        margin-right: 150px;
+      }
+
+      ul.ceng-footer_social-list {
+        display: inline-flex;
+        padding: 0px;
+      }
+
+      ul {
+        padding-inline-start: 0px;
+      }
+
+      .ceng-footer_social-list {
+        list-style: none;
+      }
+
+      svg#linkedin {
+        margin-left: 0px;
+      }
+
+      svg#facebook {
+        margin-left: 10px;
+      }
+
+      svg#instagram {
+        margin-left: 10px;
+      }
+
+      svg#youtube {
+        margin-left: 10px;
+      }
+
+      hr {
+        border: 1px solid #0085ca;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .menu_item {
+        color: #FFF !important;
+        text-decoration: none;
+      }
+
+      .menu_item:hover {
+        text-decoration: underline;
+        color: #FFF;
+      }
+
+        .ceng-footer-external_link {
+        color: #FFF !important;
+        text-decoration: none;
+      }
+
+      .ceng-footer-external_link:hover {
+        text-decoration: underline;
+        color: #FFF;
+      }
+
+      h3 {
+        color: #FFF;
+        font-size: 1.375em;
+        font-weight: 600;
+        font-family: Open Sans, sans-serif;
+        margin-bottom: 1em;
+      }
+
+      .ceng-footer_legal {
+        text-align: center;
+        margin: 30px;
+      }
+
+      ul.ceng_legal-list {
+        display: inline-flex;
+        list-style: none;
+        font-size: 17px;
+        font-family: Open sans, sans-serif;
+      }
+
+      a.ceng-footer-external_link {
+        margin: 10px;
+      }
+
+      .ceng-footer_copyright {
+        text-align: center;
+        color: #FFF;
+        font-size: 17px;
+        font-family: Open sans, sans-serif;
+        padding: 0 20px 20px;
+      }
+
+      a.ceng-footer-external_link::after {
+            -webkit-mask: url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='%23fff'%3E%3Cpath d='M1 17h14c.6 0 1-.4 1-1V8h-2v7H2V3h7V1H1c-.5 0-1 .5-1 1v14c0 .6.5 1 1 1z'/%3E%3Cpath d='M7 8.6L8.4 10 15 3.5v2.2h2V0h-5.7v2h2.2z'/%3E%3C/g%3E%3C/svg%3E) no-repeat 50% 50%;
+            background-color: #FFF;
+            -webkit-mask-size: cover;
+            height: 18px;
+            width: 18px;
+      }
+
+      li.menu-list-item {
+        font-size: 17px;
+        font-family: Open sans, sans-serif;
+        line-height: 2em;
+      }
+
+
+      @media (max-width:767px){
+        h3, li.menu-list-item {
+          text-align: center;
+        }
+      }
+
+      @media (max-width:767px) {
+        div#grid-container {
+          display: grid;
+          grid-template-columns: none;
+          justify-items: center;
+          margin: 0 auto;
+          list-style: none;
+          width: auto;
+        }
+      }
+
+      @media (max-width:767px) {
+        .col1, .col2, .col3 {
+          width: 300px;
+          float: left;
+          margin: 20px;
+          text-align: center;
+        }
+      }
+
+      @media (max-width:767px) {
+        .col1, .col2, .col3 {
+          width: 300px;
+          float: left;
+          margin: 20px;
+          text-align: center;
+        }
+      }
+
+
+      @media (max-width:668px) {
+        ul.ceng_legal-list {
+          display: block;
+          list-style: none;
+          font-size: 17px;
+          font-family: Open sans, sans-serif;
+          line-height: 3em;
+        }
+      }
+
+
+    </style>
+  
+    <footer>
+
+    <div id="grid-container">
+      <div class="col1">
+            <h3>Higher Ed</h3>
+            <li class="menu-list-item">
+                <a target="_blank" href="https://blog.cengage.com/" role="link" class="menu_item">
+                    Blog 
+                </a>
+            </li>
+             <li class="menu-list-item">
+                <a target="_blank" href="https://www.cengage.com/contact" role="link" class="menu_item">
+                    Contact Us 
+                </a>
+            </li>
+            <li class="menu-list-item">
+                <a href="https://www.cengagegroup.com/about/content-development-philosophy/" role="link" class="menu_item" target="_blank">
+                    Content Development Philosophy
+                </a>
+            </li>
+            <li class="menu-list-item">
+                <a href="https://www.cengage.com/events" role="link" class="menu_item">
+                    Events
+                </a>
+            </li>
+            
+          
+        </div>
+
+        <div class="col2 col-two">
+              <h3>Company</h3>
+              <li class="menu-list-item">
+                  <a target="_blank" href="https://www.cengagegroup.com/about/" role="link" class="menu_item">
+                      About
+                  </a>
+              </li>
+              <li class="menu-list-item">
+                  <a target="_blank" href="https://www.cengagegroup.com/accessibility/" role="link" class="menu_item">
+                      Accessibility 
+                  </a>
+              </li>
+              <li class="menu-list-item">
+                  <a target="_blank" href="https://www.cengagegroup.com/careers/" role="link" class="menu_item">
+                      Careers
+                  </a>
+              </li>
+              <li class="menu-list-item">
+                  <a target="_blank" href="https://www.cengagegroup.com/investors/" role="link" class="menu_item">
+                      Investors
+                  </a>
+              </li>
+              <li class="menu-list-item">
+                  <a target="_blank" href="https://www.cengagegroup.com/news/" role="link" class="menu_item">
+                      News
+                  </a>
+              </li>
+              <li class="menu-list-item">
+                  <a href="https://www.cengagegroup.com/royalties/" role="link" class="menu_item">
+                      Royalties
+                  </a>
+              </li>
+            
+          </div>
+
+
+          <div class="col3">
+              <h3>Follow Cengage</h3>
+                <ul class="ceng-footer_social-list">
+                  <li>
+                    <a href="https://www.linkedin.com/showcase/cengage-higher-education" data-type="link" data-group="Footer, Social">
+                      <span class="ceng-sprite ceng-sprite--linkedin">
+                        <svg version="1.1" id="linkedin" x="0px" y="0px" width="30px" height="50px" viewbox="0 0 50 50" fill="#FFF" aria-label="linkedin icon" role="img">
+                        <path d="M49.3,30.2v18.1H38.8V31.4c0-4.2-1.5-7.1-5.3-7.1c-2.9,0-4.6,1.9-5.4,3.8c-0.3,0.7-0.4,1.6-0.4,2.6v17.6
+                          H17.3c0,0,0.1-28.6,0-31.5h10.5v4.5c0,0,0,0.1-0.1,0.1h0.1v-0.1c1.4-2.1,3.9-5.2,9.5-5.2C44.2,16,49.3,20.5,49.3,30.2z M6.3,1.5
+                          c-3.6,0-5.9,2.4-5.9,5.4c0,3,2.3,5.4,5.8,5.4h0.1c3.7,0,5.9-2.4,5.9-5.4C12.1,3.9,9.9,1.5,6.3,1.5z M1,48.2h10.5V16.7H1V48.2z"></path>
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="https://www.facebook.com/CengageHigherEd/" data-type="link" data-group="Footer, Social">
+                      <span class="ceng-sprite ceng-sprite--facebook">
+                        <svg id="facebook" width="30" height="50" viewbox="0 0 24 24" fill="#FFF" xmlns="http://www.w3.org/2000/svg" aria-label="facebook icon" role="img">
+                        <path d="m22 12c0-5.52-4.48-10-10-10s-10 4.48-10 10c0 4.84 3.44 8.87 8 9.8v-6.8h-2v-3h2v-2.5c0-1.93 1.57-3.5 3.5-3.5h2.5v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z" fill="#FFF"></path>
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="https://instagram.com/cengagelearning" data-type="link" data-group="Footer, Social">
+                      <span class="ceng-sprite ceng-sprite--instagram">
+                        <svg version="1.1" id="instagram" x="0px" y="0px" width="30px" height="50px" viewbox="0 0 29.56 29.56" fill="#FFF" aria-label="instagram icon" role="img">
+                          <path d="M14.77 7.18a7.59 7.59 0 1 0 7.59 7.59 7.59 7.59 0 0 0-7.59-7.59zm0 12.52a4.93 4.93 0 1 1 4.93-4.93 4.93 4.93 0 0 1-4.93 4.93z"></path>
+                          <path d="M28.78 5.1A7.56 7.56 0 0 0 24.46.78a10.85 10.85 0 0 0-3.59-.69C19.29.02 18.79 0 14.78 0s-4.52 0-6.09.09A10.85 10.85 0 0 0
+                          5.1.78 7.56 7.56 0 0 0 .78 5.1a10.85 10.85 0 0 0-.69 3.59C.02 10.27 0 10.77 0 14.78s0 4.52.09 6.09a10.85 10.85 0 0 0 .69 3.59 7.56 7.56 0 0 0 4.32 4.32 10.85 10.85 0 0 0
+                          3.59.74c1.58.07 2.08.09 6.09.09s4.52 0 6.09-.09a10.85 10.85 0 0 0 3.59-.69 7.56 7.56 0 0 0 4.32-4.32 10.85 10.85 0 0 0 .69-3.59c.07-1.58.09-2.08.09-6.09s0-4.52-.09-6.09a10.85
+                          10.85 0 0 0-.69-3.64zm-2 15.65a8.18 8.18 0 0 1-.51 2.77 4.9 4.9 0 0 1-2.81 2.81 8.18 8.18 0 0 1-2.74.51c-1.56.07-2 .09-6 .09s-4.41 0-6-.09a8.18 8.18 0 0 1-2.74-.51 4.89 4.89 0 0
+                          1-2.82-2.81 8.18 8.18 0 0 1-.51-2.74c-.07-1.56-.09-2-.09-6s0-4.41.09-6a8.18 8.18 0 0 1 .51-2.77A4.89 4.89 0 0 1 5.98 3.2a8.18 8.18 0 0 1 2.74-.51c1.56-.07 2-.09 6-.09s4.41 0 6
+                          .09a8.18 8.18 0 0 1 2.74.51 4.9 4.9 0 0 1 2.81 2.81 8.18 8.18 0 0 1 .51 2.74c.07 1.56.09 2 .09 6s0 4.43-.07 6z"></path>
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+
+                  
+              </ul>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="ceng-footer_legal">
+        <ul class="ceng_legal-list">
+                <li class="ceng-footer_legal-list-item">
+                    <a target="_blank" class="ceng-footer-external_link" href="https://www.cengagegroup.com/legal/" role="link" data-type="link" data-group="Footer, Navigation">
+                        Terms Of Use
+                    </a>
+                </li>
+                <li class="ceng-footer_legal-list-item">
+                    <a target="_blank" class="ceng-footer-external_link" href="https://www.cengagegroup.com/privacy/" role="link" data-type="link" data-group="Footer, Navigation">
+                        Privacy
+                    </a>
+                </li>
+                <li class="ceng-footer_legal-list-item">
+                    <a target="_blank" class="ceng-footer-external_link" href="https://cengage.my.site.com/s/rtbf" role="link" data-type="link" data-group="Footer, Navigation">
+                        Do Not Sell
+                    </a>
+                </li>
+                <li class="ceng-footer_legal-list-item">
+                    <a target="_blank" class="ceng-footer-external_link" href="https://www.cengagegroup.com/piracy/" role="link" data-type="link" data-group="Footer, Navigation">
+                        Piracy
+                    </a>
+                </li>
+                <li class="ceng-footer_legal-list-item">
+                    <a target="_blank" class="ceng-footer-external_link" href="https://www.cengagegroup.com/permissions/" role="link" data-type="link" data-group="Footer, Navigation">
+                        Copyright
+                    </a>
+                </li>
+        </ul>
+    </div>
+
+    <div class="ceng-footer_copyright">© 2025 Cengage Learning, Inc. and its affiliates</div>
+
+    </footer>
+      </div>
+    </div>
+    
+    
+
+
+  <script type="text/javascript">
+  var _elqQ = _elqQ || [];
+  _elqQ.push(['elqSetSiteId', '2138']);
+  _elqQ.push(['elqTrackPageView']);
+  _elqQ.push(['elqGetCustomerGUID']);
+
+  function async_load() {
+    if (document.getElementById('vidyard-eloqua-include')) { return; }
+
+    var s = document.createElement('script');
+    s.id = 'vidyard-eloqua-include';
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//img.en25.com/i/elqCfg.min.js';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  }
+
+  if (document.readyState === 'complete') {
+    async_load();
+  } else if (window.addEventListener) {
+    window.addEventListener('DOMContentLoaded', async_load, false);
+  } else if (window.attachEvent) {  // <=IE8
+    window.attachEvent('onload', async_load);
+  }
+</script>
+
+
+
+
+
+
+    
+  </body>
+</html>
